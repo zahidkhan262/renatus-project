@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+a{text-decoration: none!important;}
+
+li{list-style: none!important;}
+
+
+/* header */
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 11111;
+    padding: 10px;
+    background: rgba(0,0,0,0.1);
+}
+.logo img{
+    height: 60px;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    padding: 0px 10px 0px 0px;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+nav ul li a:hover{
+    color: #f1f1f1;
+}
+
+
+/* main */
+
+main{
+    height:100vh; 
+    width: 100%;
+    background: url(home-about.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* welcome */
+
+.welcome-page{
+    margin: 70px auto;
+}
+
+.welcome-img img{
+    width: 100%;
+}
+.welcome-info{
+    margin-top: 50px;
+}
+.welcome-info h2{
+    color: #eb5d38;
+    font-weight: 600;
+}
+.welcome-info p{
+    text-align: justify;
+    line-height: 25px;
+}
+.view{
+  background: #eb5d38;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+/* mission-page */
+
+.mission-page{
+    background: #3e805aeb;
+    padding: 40px 0;
+}
+
+.mission-heading h2{
+    text-align: center;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.mission-content p{
+    color: #ffffff;
+    line-height: 25px;
+    text-align: justify;
+    padding-top: 20px;
+}
+.mission-img{
+    float: right;
+    width: 20%;
+    min-width: 250px;
+    height: auto;
+}
+/* slider products */
+
+.slider-products h2{
+    color: #eb5d38;
+    font-weight: 700;
+}
+.box{
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    padding: 10px;
+}
+.box-info{
+    padding: 10px;
+}
