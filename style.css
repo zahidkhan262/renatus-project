@@ -18,21 +18,21 @@ header{
     width: 100%;
     position: fixed;
     z-index: 11111;
-    padding: 10px;
+    padding: 10px 20px;
     background: rgba(0,0,0,0.1);
 }
 .logo img{
     height: 60px;
 }
 nav ul{
+    width: 100%;
     margin: 0;
-    padding: 0;
 }
 nav ul li{
     display: inline-block;
+    padding: 10px;
 }
 nav ul li a{
-    padding: 0px 10px 0px 0px;
     color: #ffffff;
     text-transform: uppercase;
     transition: 0.3s;
@@ -41,6 +41,22 @@ nav ul li a:hover{
     color: #f1f1f1;
 }
 
+.menu-bar{
+font-size: 25px;
+color: #eb5d38;
+display: none;
+}
+
+#demo{
+    z-index: 111111;
+}
+.offcanvas-body{
+    background: rgba(0,0,0,0.3);
+}
+
+.active{
+    background: #000000;
+}
 
 /* main */
 
@@ -135,6 +151,7 @@ footer h4{
     color: #ffffff;
     line-height: 24px;
     font-size: 14px;
+    margin-top: 50px;
 }
 .social-ul li{
 display: inline-block;
@@ -158,6 +175,7 @@ margin-right: 15px;
     background: #ffffff;
     cursor: pointer;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 .input-field input{
     width: 90%;
@@ -165,4 +183,22 @@ margin-right: 15px;
     padding: 5px 12px;
     border: none;
     outline: none;
+}
+
+@media(max-width:900px){
+
+    .menu-bar{
+        display: block;
+    }
+    nav ul{
+        display: none;
+    }
+    .modal-menu li{
+        display: block;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .modal-menu li a{
+        color: #f1f1f1;
+    }
 }

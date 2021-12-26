@@ -12,6 +12,8 @@
     <script src="https://kit.fontawesome.com/8b6c44059c.js"></script>
 
     <link rel="stylesheet" href="style.css">
+    <!-- bootstrap -->
+    <script src="bootstrap.bundle.js"></script>
     <link rel="stylesheet" href="bootstrap.css">
     <!-- owl carousel -->
     <link rel="stylesheet" href="owl.carousel.min.css">
@@ -36,7 +38,35 @@
                 <li><a href="#">Join Now</a></li>
             </ul>
         </nav>
+        <div class="menu-bar" data-bs-toggle="offcanvas" data-bs-target="#demo">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
     </header>
+
+    <!-- off-canvas -->
+
+    <div class="offcanvas offcanvas-start" id="demo">
+        <div class="offcanvas-header">
+            <div class="logo">
+                <img src="logo2.png" alt="">
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="modal-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Business Plan</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Join Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
 
     <!-- main -->
 
@@ -338,6 +368,19 @@
                     loop: false
                 }
             }
+        })
+
+        //jquery
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(window).scrollTop() > 90) {
+                    $('header').slideUp(500);
+                    $('header').addClass('active')
+                } else {
+                    $('header').removeClass('active')
+
+                }
+            })
         })
     </script>
 </body>
